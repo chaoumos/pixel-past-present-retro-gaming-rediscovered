@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const blogName = "pixel-past-present";
+const blogTheme = "retro video games from the 70s, 80s, and 90s";
+const pageTitle = `Welcome to ${blogName}`;
+const pageDescription = `A blog dedicated to ${blogTheme}.`;
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="hero bg-gray-900 text-white py-20 rounded-lg shadow-md">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Welcome to {blogName}!</h1>
+      <p class="text-xl mb-8">Rediscovering the Golden Age of Gaming</p>
+      <p class="text-lg">A nostalgic journey through the history, reviews, and community of retro video games from the 70s, 80s, and 90s.</p>
+      <a href="/blog" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full mt-6">
+        Explore the Blog
+      </a>
+    </div>
+  </div>
+
+  <section class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-center">What You'll Find Here</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="">
+          <h3 class="text-2xl font-semibold mb-2">Reviews</h3>
+          <img src="/placeholder-review.jpg" alt="Placeholder Review" class="w-full h-48 object-cover rounded-md mb-4">
+          <p>Detailed critiques and gameplay footage of classic games.</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">History</h3>
+          <img src="/placeholder-history.jpg" alt="Placeholder History" class="w-full h-48 object-cover rounded-md mb-4">
+          <p>Articles about the evolution of gaming, consoles, and developers.</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Community</h3>
+          <img src="/placeholder-community.jpg" alt="Placeholder Community" class="w-full h-48 object-cover rounded-md mb-4">
+          <p>Connect with fellow retro enthusiasts and share your memories.</p>
+           <a href="/community" class="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full mt-2">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
